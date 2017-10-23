@@ -2,9 +2,12 @@
 <html>
 	<head>
 		<!-- Paramètrage / options du site -->
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
+		<link rel="canonical" href="http://www.unepage.fr" />
+		<meta name="robots" content="index, follow"><!-- google voit moi et suit moi sinon no-index, no-follow -->
 		<title>Commande GITHUB</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<meta name="description" content="description de la page">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:200" rel="stylesheet">
 	</head>
 	<body>
@@ -18,7 +21,7 @@
 				<p>Attention ne pas faire Next sur l'étape "Ajusting your path environment" et choisir la 3<sup>eme</sup> option :</p>
 			</div>
 			<div id="cmd">
-				<h2>Commandes</h2>
+				<h2>Commandes GIT</h2>
 				<p>
 					<span class="n"><a>git_config_</a></span><span class="p"><a>--global_user.email_</a></span><span class="d"><a>"_ _ _ _ _ _"</a></span>
 				</p>
@@ -49,13 +52,40 @@
 				<p>
 					<span class="n"><a>git_checkout_</a></span><span class="d"><a>nom-branche</a></span><span class="t"><a>Pour sortir de la branche</a></span>
 				</p>
-				<p>A faire avant tout commit :</p>
+				<h3>A faire avant tout commit :</h3>
 				<p>
 					<span class="n"><a>git_pull_</a></span><span class="p"><a>origin_</a></span><span class="d"><a>master</a></span><span class="t"><a>Pour recharger le projet en local depuis Github</a></span>
 				</p>
-				<p>Recupérer un projet depuis Github :</p>
+				<h3>Recupérer un projet depuis Github :</h3>
 				<p>
 					<span class="n"><a>git_clone_</a></span><span class="d"><a>URL recupérée sur Github</a></span><span class="t"><a>Pour copier un projet de Github en Local</a></span>
+				</p>
+				<h3>Visualiser les versions précédantes :</h3>
+				<p>
+					<span class="n"><a>git_log_</a></span><span class="t"><a>Pour connaitre toute la liste des modifcations effectuées, quand, par qui, quoi.</a></span>
+				</p>
+				<p>
+					<span class="n"><a>git_log_</a></span><span class="d"><a>-n1</a></span><span class="t"><a>Pour connaitre la dernière modifcation effectuée, quand, par qui, quoi.</a></span>
+				</p>
+				<p>
+					<span class="n"><a>git_reflog_</a></span><span class="t"><a>Pour connaitre toute la liste des n° de commit</a></span>
+				</p>
+				<p>
+					<span class="n"><a>git_log_</a></span><span class="d"><a>-n1</a></span><span class="t"><a>Pour connaitre le dernier n° de commit</a></span>
+				</p>
+				<h3>METHODE 1 pour revenir à une version précédante :</h3>
+				<p>
+					<span class="n"><a>git_reset_</a></span><span class="p"><a>--_hard</a></span><span class="d"><a>2d15856 </a></span><span class="t"><a>Pour définir quel est le n° de commit à reset</a></span>
+				</p>
+				<p>
+					<span class="n"><a>git_push_</a></span><span class="p"><a>--_force</a></span><span class="t"><a>Pour revenir à ce commit.</a></span>
+				</p>
+				<h3>METHODE 2 pour revenir à une version précédante :</h3>
+				<p>
+					<span class="n"><a>git_revert_</a></span><span class="d"><a>2d15856 </a></span><span class="t"><a>Pour définir vers quel n° de commit effectuer le revert</a></span>
+				</p>
+				<p>
+					<span class="n"><a>git_push_</a></span><span class="p"><a>--_force</a></span><span class="t"><a>Pour revenir à ce commit.</a></span>
 				</p>
 				<h2>Commandes DOS</h2>
 				<p><span class="dos"><a>pwd_</a></span><span class="t"><a>Où suis-je</a></span></p>
