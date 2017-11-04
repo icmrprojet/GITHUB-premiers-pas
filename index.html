@@ -10,7 +10,7 @@
 	<body>
 		<div class="r"><img src="images/install.jpg" alt="alert"><img src="images/conflit.png" alt="alert"></div>
 		<div id="container">
-			<h1>INITIATION GITHUB</h1>
+			<h1 class="logoGit">INITIATION GITHUB</h1>
 			<div id="inst">
 				<h2>Installation</h2>
 				<p>Pour windows : <a href="https://git-for-windows.github.io" target="_blank">https://git-for-windows.github.io</a><br>
@@ -18,12 +18,12 @@
 				<p>Attention ne pas faire Next sur l'étape "Ajusting your path environment" et choisir la 3<sup>eme</sup> option :</p>
 			</div>
 			<div id="cmd">
-				<h2>Commandes</h2>
+				<h2>Commandes</h2><span class="alerte">Les "<strong style="font-size:24px;background: #ffffff;padding: 0 5px">_</strong>" sont des espaces</span>
 				<p>
-					<span class="n"><a>git_config_</a></span><span class="p"><a>--global_user.email_</a></span><span class="d"><a>"_ _ _ _ _ _"</a></span>
+					<span class="n"><a>git_config_</a></span><span class="p"><a>--global_user.email_</a></span><span class="d"><a>"monemailpourgithub@gmail"</a></span>
 				</p>
 				<p>
-					<span class="n"><a>git_config_</a></span><span class="p"><a>--global_user.name_</a></span><span class="d"><a>"_ _ _ _ _ _"</a></span><span class="t"><a>Pour connecter mon ordi avec mon compte GITHUB</a></span>
+					<span class="n"><a>git_config_</a></span><span class="p"><a>--global_user.name_</a></span><span class="d"><a>"monusernamepourgithub"</a></span><span class="t"><a>Pour connecter mon ordi avec mon compte GITHUB</a></span>
 				</p>
 				<p>
 					<span class="n"><a>git_status_</a></span><span class="t"><a>Pour lister l'etat </a></span>
@@ -49,7 +49,7 @@
 				<p>
 					<span class="n"><a>git_checkout_</a></span><span class="d"><a>nom-branche</a></span><span class="t"><a>Pour sortir de la branche</a></span>
 				</p>
-				<p>A faire avant tout commit :</p>
+				<p class="top">A faire avant tout commit :</p>
 				<p>
 					<span class="n"><a>git_pull_</a></span><span class="p"><a>origin_</a></span><span class="d"><a>master</a></span><span class="t"><a>Pour recharger le projet en local depuis Github</a></span>
 				</p>
@@ -57,6 +57,31 @@
 				<p>
 					<span class="n"><a>git_clone_</a></span><span class="d"><a>URL recupérée sur Github</a></span><span class="t"><a>Pour copier un projet de Github en Local</a></span>
 				</p>
+				<p class="top">Pour revenir à une version antérieure :</p>
+				<p>
+					<span class="n"><a>git_log_</a></span><span class="t"><a>Permet de visualiser tous les commit en détail, QUI a fait QUOI et QUAND</a></span>
+				</p>
+				<p>
+					<span class="n"><a>git_log_</a></span><span class="p"><a>-n1</a></span><span class="t"><a>Permet de visualiser le premier commit</a></span>
+				</p>
+				<p>METHODE 1 :</p>
+				<p>
+					<span class="n"><a>git_reflog_</a></span><span class="p"><a>-n2</a></span><span class="t"><a>Donne le n° de commit du second commit : ici par exemple 4994164</a></span>
+				</p>
+				<p>
+					<span class="n"><a>git_reset_</a></span><span class="p"><a>--hard_</a></span><span class="d"><a>4994164</a></span><span class="t"><a>Indique le n° de commit pour le reset</a></span>
+				</p>
+				<p>
+					<span class="n"><a>git_push_</a></span><span class="p"><a>--force</a></span><span class="t"><a>Effectue le Reset précedement demandé</a></span>
+				</p>
+				<p>METHODE 2 :</p>
+				<p>
+					<span class="n"><a>git_revert_</a></span><span class="p"><a>--hard_</a></span><span class="d"><a>4994164</a></span><span class="t"><a>Indique le n° de commit pour le revert</a></span>
+				</p>
+				<p>
+					<span class="n"><a>git_push_</a></span><span class="p"><a>origin_</a></span><span class="d"><a>master</a></span><span class="t"><a>Pour lancer le commit du master</a></span>
+				</p>
+
 				<h2>Commandes DOS</h2>
 				<p><span class="dos"><a>pwd_</a></span><span class="t"><a>Où suis-je</a></span></p>
 				<p><span class="dos"><a>ls_</a></span><span class="t"><a>Lister</a></span></p>
@@ -65,6 +90,7 @@
 				<p><span class="dos"><a>cd_</a></span><span class="d"><a>+Glissé-déposé du Dossier</a></span><span class="t"><a>Se positionne dans le dossier</a></span></p>
 				<p><span class="dos"><a>mkdir_</a></span><span class="d"><a>nom-du-dossier</a></span><span class="t"><a>Créer le directory</a></span></p>
 				<p><span class="dos"><a>touch_</a></span><span class="d"><a>fichier.ext</a></span><span class="t"><a>Créer le fichier, avec nom + extension</a></span></p>
+				<p><span class="dos"><a>exit</a></span><span class="t"><a>Pour quitter la console</a></span></p>
 			</div>
 		</div>
 	</body>
