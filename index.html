@@ -4,26 +4,27 @@
 		<!-- Paramètrage / options du site -->
 		<meta charset="utf-8">
 		<title>Commande GITHUB</title>
-		<link rel="stylesheet" href="css/style.css" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:200" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
 	</head>
 	<body>
-		<div class="r"><img src="images/install.jpg" alt="alert"><img src="images/conflit.png" alt="alert"></div>
+		<div class="r hide"><img src="images/install.jpg" alt="alert"><img src="images/conflit.png" alt="alert"></div>
 		<div id="container">
 			<h1 class="logoGit">INITIATION GITHUB</h1>
-			<div id="inst">
+			<div id="inst" class="hide">
 				<h2>Installation</h2>
 				<p>Pour windows : <a href="https://git-for-windows.github.io" target="_blank">https://git-for-windows.github.io</a><br>
 				Télécharger le fichier : <strong><i>Git-2.14.2.3-64-bit.exe</i></strong> et Installer sur C / Programme Files</p>
 				<p>Attention ne pas faire Next sur l'étape "Ajusting your path environment" et choisir la 3<sup>eme</sup> option :</p>
 			</div>
 			<div id="cmd">
-				<h2>Commandes</h2><span class="alerte">Les "<strong style="font-size:24px;background: #ffffff;padding: 0 5px">_</strong>" sont des espaces</span>
+				<h2>Commandes GIT</h2><span class="alerte">Les "<strong style="font-size:24px;background: #ffffff;padding: 0 5px">_</strong>" sont des espaces</span>
+				<h3 class="top">Pour connecter la console :</h3>
 				<p>
-					<span class="n"><a>git_config_</a></span><span class="p"><a>--global_user.email_</a></span><span class="d"><a>"monemailpourgithub@gmail"</a></span>
+					<span class="n"><a>git_config_</a></span><span class="p"><a>--global_user.email_</a></span><span class="d"><a>"emailgithub@gmail"</a></span>
 				</p>
 				<p>
-					<span class="n"><a>git_config_</a></span><span class="p"><a>--global_user.name_</a></span><span class="d"><a>"monusernamepourgithub"</a></span><span class="t"><a>Pour connecter mon ordi avec mon compte GITHUB</a></span>
+					<span class="n"><a>git_config_</a></span><span class="p"><a>--global_user.name_</a></span><span class="d"><a>"usernamegithub"</a></span><span class="t hide"><a>Pour connecter mon ordi avec mon compte GITHUB</a></span>
 				</p>
 				<p>
 					<span class="n"><a>git_status_</a></span><span class="t"><a>Pour lister l'etat </a></span>
@@ -32,41 +33,46 @@
 					<span class="n"><a>git_add_</a></span><span class="p"><a>&bull;</a></span><span class="t"><a>Ajoute tous les fichiers to commit</a></span>
 				</p>
 				<p>
-					<span class="n"><a>git_add_</a></span><span class="d"><a>.gitignore_README.md</a></span><span class="t"><a>Ajoute ces 2 fichiers dans la liste des fichiers to commit</a></span>
+					<span class="n"><a>git_add_</a></span><span class="d"><a>.gitignore_README.md</a></span><span class="t"><a>Ajoute ces 2 fichiers to commit</a></span>
 				</p>
 				<p>
-					<span class="n"><a>git_commit_</a></span><span class="p"><a>-m_</a></span><span class="d"><a>"initial_commit"</a></span><span class="t"><a>Pour le premier commit du projet</a></span>
+					<span class="n"><a>git_commit_</a></span><span class="p"><a>-m_</a></span><span class="d"><a>"initial_commit"</a></span><span class="t"><a>Premier commit du projet</a></span>
 				</p>
 				<p>
 					<span class="n"><a>git_push_</a></span><span class="p"><a>origin_</a></span><span class="d"><a>master</a></span><span class="t"><a>Pour lancer le commit du master</a></span>
 				</p>
+				<h3 class="top">Pour créer une branche :</h3>
 				<p>
-					<span class="n"><a>git_branch_</a></span><span class="d"><a>nom-du-fichier</a></span><span class="t"><a>Pour créer une branche et lister celle déjà créées</a></span>
+					<span class="n"><a>git_branch_</a></span><span class="d"><a>nom-branche</a></span><span class="t"><a>Créer une branche, la nommer, y aller.</a></span>
 				</p>
 				<p>
-					<span class="n"><a>git_branch_</a></span><span class="d"><a>nom-branche</a></span><span class="t"><a>Pour créer une branche et lister celle déjà créées</a></span>
+					<span class="n"><a>git_branch_</a></span><span class="t"><a>Lister les branches créées</a></span>
+				</p>
+				<h3>Pour supprimer une branche :</h3>
+				<p>
+				<span class="n"><a>git_branch_</a></span><span class="p"><a>-D_</a></span><span class="d"><a>nom-branche</a></span><span class="t"><a>La suppression sera visible sur GITHUB seulement après le prochain PUSH</a></span>
 				</p>
 				<p>
 					<span class="n"><a>git_checkout_</a></span><span class="d"><a>nom-branche</a></span><span class="t"><a>Pour sortir de la branche</a></span>
 				</p>
-				<p class="top">A faire avant tout commit :</p>
+				<h3 class="top">A faire avant tout commit :</h3>
 				<p>
-					<span class="n"><a>git_pull_</a></span><span class="p"><a>origin_</a></span><span class="d"><a>master</a></span><span class="t"><a>Pour recharger le projet en local depuis Github</a></span>
+					<span class="n"><a>git_pull_</a></span><span class="p"><a>origin_</a></span><span class="d"><a>master</a></span><span class="t"><a>Synchro avec Github</a></span>
 				</p>
-				<p>Recupérer un projet depuis Github :</p>
+				<h3>Recupérer un projet depuis Github :</h3>
 				<p>
-					<span class="n"><a>git_clone_</a></span><span class="d"><a>URL recupérée sur Github</a></span><span class="t"><a>Pour copier un projet de Github en Local</a></span>
+					<span class="n"><a>git_clone_</a></span><span class="d"><a>URL recupérée sur Github</a></span><span class="t"><a>Projet de Github en Local</a></span>
 				</p>
-				<p class="top">Pour revenir à une version antérieure :</p>
+				<h3 class="top">Pour revenir à une version antérieure :</h3>
 				<p>
-					<span class="n"><a>git_log_</a></span><span class="t"><a>Permet de visualiser tous les commit en détail, QUI a fait QUOI et QUAND</a></span>
+					<span class="n"><a>git_log_</a></span><span class="t"><a>QUI a fait QUOI et QUAND</a></span>
 				</p>
 				<p>
-					<span class="n"><a>git_log_</a></span><span class="p"><a>-n1</a></span><span class="t"><a>Permet de visualiser le premier commit</a></span>
+					<span class="n"><a>git_log_</a></span><span class="p"><a>-n1</a></span><span class="t"><a>Premier commit</a></span>
 				</p>
-				<p>METHODE 1 :</p>
+				<h4>METHODE 1 :</h4>
 				<p>
-					<span class="n"><a>git_reflog_</a></span><span class="p"><a>-n2</a></span><span class="t"><a>Donne le n° de commit du second commit : ici par exemple 4994164</a></span>
+					<span class="n"><a>git_reflog_</a></span><span class="p"><a>-n2</a></span><span class="t"><a>Donne le n° second commit : ici par exemple 4994164</a></span>
 				</p>
 				<p>
 					<span class="n"><a>git_reset_</a></span><span class="p"><a>--hard_</a></span><span class="d"><a>4994164</a></span><span class="t"><a>Indique le n° de commit pour le reset</a></span>
@@ -74,7 +80,7 @@
 				<p>
 					<span class="n"><a>git_push_</a></span><span class="p"><a>--force</a></span><span class="t"><a>Effectue le Reset précedement demandé</a></span>
 				</p>
-				<p>METHODE 2 :</p>
+				<h4>METHODE 2 :</h4>
 				<p>
 					<span class="n"><a>git_revert_</a></span><span class="p"><a>--hard_</a></span><span class="d"><a>4994164</a></span><span class="t"><a>Indique le n° de commit pour le revert</a></span>
 				</p>
